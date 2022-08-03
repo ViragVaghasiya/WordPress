@@ -1,0 +1,522 @@
+/*!
+Theme Name: dsignfly
+Author: Virag Vaghasiya
+Author URI: https://github.com/ViragVaghasiya
+Description: A WordPress Portfolio Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: dsignfly-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/* Theme background */
+html {
+  background-image: url("assets/images/rapeatable-bg.png");
+  background-repeat: repeat-xy;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+/* Content Styles */
+.content-style-cropped-width {
+    margin: 0 300px;
+}
+
+.content-style-full-width {
+    width: 100%;
+}
+
+/* font styles */
+.font-light {
+    font-weight: 300;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0;
+}
+
+/* title styles */
+.dsignfly-title {
+    font-size: 45px;
+    color: #62585f;
+    text-shadow: 0 2px #fff;
+}
+
+.dsignfly-subtitle {
+    font-size: 25px;
+    color: #62585f;
+    text-shadow: 0 2px #fff;
+}
+
+.dsign-cursor-pointer {
+    cursor: pointer;
+}
+
+.dsign-cursor-default {
+    cursor: default;
+}
+
+/* navigation css : start */
+#dsignfly-top-header {
+    height: 105px;
+    display: inline-grid;
+    align-items: center;
+}
+
+input.current-dsign-cat {
+    color: #fff;
+    background-color: #ef4634;
+}
+
+#dsignfly-top-header-content {
+    display: flex;
+    align-items: center;
+}
+
+#dsignfly-nav-links {
+    width: 100%;
+}
+
+#dsignfly-nav-menu .menu-item  a {    
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#dsignfly-nav-menu .current-menu-item a, 
+#dsignfly-nav-menu .menu-item  a:hover {    
+    transition: all 0.3s ease-in;
+    color: #fff;
+    background-color: #ef4634;
+    border-radius: 3px;
+}
+
+#dsignfly-header-logo {
+    width: 100%;
+    max-width: 200px;
+    max-height: 75px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#dsignfly-nav-menu {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    list-style-type: none;
+}   
+
+.dsignfly-search-form {
+    display: flex;
+}
+
+#dsignfly-custom-search {
+    color: rgb(8, 68, 75);
+    height: 20px;
+    width: 150px;
+    border: 1px solid #62585f;
+    border-radius: 5px;
+    margin: 0 10px ;
+}
+
+#dsignfly-search-icon {
+    background: url(assets/images/search-icon.png) no-repeat;
+    height: 21px;
+    width: 21px;
+    border: none;
+}
+/* navigation css : end */
+
+/* image carousel css : start */
+#dsignfly-carousel-section {
+    box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.3);
+    height: 544px;
+    background: #e73d2d;
+    margin-bottom: 3px;
+    position: relative;
+    text-align: center;
+}
+
+#dsignfly-carousel-text-nav {
+    display: flex;
+    justify-content: center;
+}
+
+#static-carousel-image {
+    margin-top: 10px;
+}
+
+.dsignfly-custom-carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: all 0.5s ease-in;
+}
+
+.selected {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+ 
+.dismiss {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    0% { -webkit-transform: translateX(-100%); }
+    100% { -webkit-transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    0% {transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+.dsignfly-carousel-navigation {
+    border: none;
+    position: absolute;
+    background: url(assets/images/slider-arrows.png) no-repeat;
+    height: 35px;
+    width: 40px;
+    top: 40%;
+}
+
+#dsignfly-carousel-prev {
+    background-position: 0 0;
+    left: 1%;
+    margin-left: inherit;
+}
+
+#dsignfly-carousel-next {
+    background-position: 100% 0;
+    right: 1%;
+    margin-right: inherit;
+}
+
+.dsignfly-carousel-section #dsignfly-carousel-next:active {
+    transition: all 0.5s ease-in-out;
+}
+
+#dsignfly-carousel-text-content {
+    position: absolute;
+    text-align: center;
+    top: 56%;
+}
+
+#dsignfly-carousel-title {
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 0 2px #950904;
+    margin-bottom: 10px;
+}
+
+#dsignfly-carousel-paragraph {
+    line-height: 24px;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    color: #fff;   
+}
+/* image carousel css : end */
+
+/* features section css : start */
+#dsignfly-features-section {
+    height: 101px;
+    background-image: url(assets/images/features-repeatable-bg.png);
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#dsignfly-features-content {
+    display: flex;
+    align-items: center;
+  }
+
+.dsignfly-feature {
+    margin-right: 15px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsignfly-features-text {
+    margin: 0 10px;
+}
+
+.dsignfly-feature-icon {
+    border: none;
+    background: url(assets/images/feature-icons.png) no-repeat;
+    height: 51px;
+    width: 51px;
+}
+
+#dsigfly-advertising {
+    background-position: 0 0;
+}
+
+#dsigfly-multimedia {
+    background-position: 50% 0;
+}
+
+#dsigfly-photography {
+    background-position: 100% 0;
+}
+
+.dsignfly-feature-title {
+    font-size: 20px;
+    color: #ef4634;
+    text-shadow: 0 2px #fff;
+    text-decoration: none;
+}
+
+.dsignfly-feature-title:hover {
+    color: #222;
+}
+
+.dsignfly-features-paragraph {
+    margin: 5px 0 0 0;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #333;
+    line-height: 19.5px;
+}
+/* features section css : end */
+
+/* image gallery css : start */
+#dsignfly-image-gallery-header {
+    display: flex;
+    align-items: center;
+}
+
+#dsignfly-image-gallery-button {
+    text-decoration: none;
+    margin-left: auto;
+    order: 2;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+hr {
+    border: solid #62585f;
+    border-width: 0 0 1px 0;
+}
+
+#line1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.line2 {
+    margin-top: 20px;
+}
+
+#dsignfly-image-gallery {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.dsignfly-image-box {
+    position: relative;
+    overflow: clip;
+    height: 210px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #222;
+}
+/* image gallery css : end */
+
+/* footer css : start */
+.dsignfly-contact-msg-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 15px;
+    padding: 40px 0;
+}
+
+.dsignfly-paragraph {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.dsignfly-orange-link {
+    font-size: 14px;
+    color: #ef4634;
+    text-decoration: none;
+}
+
+.dsignfly-orange-link:hover {
+    text-decoration: underline;
+}
+
+#dsignfly-social-image {
+    object-fit: none;
+    object-position: left top;
+    width: 100%;
+    height: 40px;
+}
+
+#dsignfly-footer {
+    text-align: center;
+    color: #62585f;
+}
+/* footer css : end */
+
+/* sidebar & widget css : start */
+.dsignfly-sidebar-area {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.dsignfly-sidebar-widget {
+    margin-bottom: 45px;
+}
+
+#dsignfly-portfolio-sidebar-widget-content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.dsignfly-portfolio-mini-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+} 
+
+.dsignfly-popular-posts-mini-image,
+.dsignfly-related-posts-mini-image,
+.dsignfly-recent-posts-mini-image {
+    height: 45px;
+    width: 45px;
+    border-radius: 3px;
+}
+
+#dsignfly-widget-author-link {
+    font-size: 12px;
+}
+
+.dsignfly-popular-posts-item,
+.dsignfly-related-posts-item,
+.dsignfly-recent-posts-item {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 5px;
+    margin-bottom: 10px;
+}
+
+.dsignfly-popular-posts-body,
+.dsignfly-related-posts-body,
+.dsignfly-recent-posts-body {
+    color: #62585f;
+}
+
+.dsignfly-popular-posts-body-author,
+.dsignfly-related-posts-body-author,
+.dsignfly-recent-posts-body-author {
+    font-size: 12px;
+    margin: 0 0;
+}
+
+.dsignfly-popular-post-title,
+.dsignfly-related-post-title,
+.dsignfly-recent-post-title {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.dsignfly-archive-widget-item,
+.dsignfly-archive-widget-item > a {
+    font-size: 13px;
+    color: #62585f;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dsignfly-archive-widget-item:hover,
+.dsignfly-archive-widget-item > a:hover {
+    color: #ef4634;
+}
+
+.wp-block-archives-list {
+    padding: 0;
+}
+
+.twitter-latest-post-widget {
+    max-height:180px;
+    overflow-y:scroll;
+}
+
+.twitter-widgte-title-bar {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.twitter-latest-post-widget .timeline-Widget {
+    background-color: transparent;
+}
+
+.dsignfly-archive-widget-item {
+    margin-bottom: 5px;
+}
+
+.dsignfly-archive-widget-content {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.dsignfly-sidebar-area li {
+    list-style-type: none;
+}
+/* sidebar & widget css : end */

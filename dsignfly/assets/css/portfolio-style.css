@@ -1,0 +1,214 @@
+/* 
+    css for page : portfolio 
+*/
+
+#dsignfly-portfolio-tags {
+    margin-left: auto;
+    display: flex;
+}
+
+/* image gallery css : start */
+.dsignfly-image-gallery-button {
+    text-decoration: none;
+    margin-left: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dsignfly-image-gallery-button:hover {
+    background-color: #ef4634;
+}
+
+#dsignfly-portfolio-gallery-container {
+    margin-bottom: 20px;
+}
+
+.dsignfly-image-box-cover {
+    object-fit: cover;
+    object-position: left;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+#dsignfly-image-hover-content {
+    color: #fff;
+    position: absolute;
+    height: auto;
+    width: auto;
+    display: none;
+    justify-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.dsignfly-image-box-cover:hover  {
+    filter: brightness(35%);
+}
+
+.dsignfly-image-box:hover #dsignfly-image-hover-content {
+    color: white;
+    display: grid;
+}
+
+#dsignfly-image-gallery-logo {
+    height: 20px;
+    width: 20px;
+}
+
+.dsign-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.704); 
+}
+
+#dsignfly-modal-content {
+    position: relative;
+}
+  
+/* Modal Content */
+#modal-content-container {
+    background-color: rgb(127, 127, 127);
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    height: 480px;
+    width: 540px;
+}
+
+#dsignfly-modal-close {
+    background-color: rgb(127, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 29%;
+}
+  
+#dsignfly-modal-image-container {
+    height: 400px;
+    width: 540px;
+}
+
+#dsignfly-modal-image {
+    border-radius : 5px;
+    object-fit: cover;
+    width: inherit;
+    height: inherit; 
+}
+
+#modal-content-footer {
+    position: relative;
+    text-overflow: ellipsis;
+    display: table;
+    height: 80px;
+    width: inherit;
+}
+
+#dsignfly-modal-text {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 20px;
+    font-size: 18px;
+    color: #c6c6c6;
+    max-width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.dsignfly-modal-navigation {
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 22px;
+    width: 24px;
+    background: url(../images/slider-arrows.png) no-repeat;
+    border: none;
+    background-size: 70px 50px;
+}
+
+#dsignfly-modal-prev {
+    float: left;
+    background-position: 0 0;
+}
+
+#dsignfly-modal-next {
+    float: right;
+    background-position: 100% 0;
+}
+  
+/* The Close Button */
+#dsign-modal-close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#dsign-modal-close:hover,
+#dsign-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+/* image gallery css : end */
+
+/* pagination css : start */
+.dsignfly-pagination-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.dsignfly-pagination-container .page-numbers { 
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 3px 8px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.dsignfly-pagination-container .current {
+    color: #ef4634;
+}
+
+.dsignfly-pagination-container a.page-numbers:hover {
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background-color: #ef4634;
+    border-radius: 3px;
+}
+
+.dsignfly-pagination-prev {
+    transform: rotate(180deg);
+    height: 12px;
+    width: 8px;
+}
+
+.dsignfly-pagination-next {
+    height: 12px;
+    width: 8px;
+}
+/* pagination css : end */

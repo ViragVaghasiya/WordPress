@@ -1,0 +1,166 @@
+/* 
+    css for page : single.php 
+*/
+
+/* post css : start */
+#dsignfly-single-post-page-container {
+    display: flex;
+    color: #62585f;
+    margin-bottom: 30px;
+}
+
+#dsignfly-single-post-container {
+    width: 70%;
+    margin-right: 20px;
+}
+
+#dsingfly-single-post-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.dsingfly-single-post-content {
+    line-height: 21px;
+    font-size: 14px;
+    color: #62585f;
+    margin: 15px 0 25px 0;
+}
+
+.dsingfly-single-post-content img {
+    border-radius: 3px;
+}
+
+/* post css : end */
+
+/* post comments css : start */
+.dsingfly-post-comment-title {
+    font-size: 18px;
+}
+
+.dsingfly-single-post-comments-container {
+    font-size: 14px;
+    color: #62585f;
+    line-height: 21px;
+    
+}
+
+.dsingfly-single-post-comments-container  ul , .dsingfly-single-post-comments-container  li { 
+    list-style-type: none;
+}
+
+
+#dsignfly-comment-author-time {
+    font-size: 13px;
+}
+
+#dsignfly-comment-reply-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+li.bypostauthor > div {
+    margin-top: 18px;
+    background-color: #fff;
+    padding: 12px 8px 12px 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#line3 {
+    margin: 20px 0;
+}
+
+#dsignfly-comment-form {
+    max-width: inherit;
+    display: grid;
+    grid-template-areas: 
+        'whole1 whole1 whole1'
+        'single1 single2 single3'
+        'single1 single2 submit'
+    ;
+    gap: 15px;
+}
+
+#dsignfly-post-comment-form-comment {
+    grid-area: whole1;
+}
+
+#dsignfly-post-comment-form-name {
+    grid-area: single1;
+}       
+
+#dsignfly-post-comment-form-email {
+    grid-area: single2;
+}
+
+#dsignfly-post-comment-form-website {
+    grid-area: single3;
+}
+
+.dsignfly-post-comment-form-input {
+    width: 100%;
+    line-height: 30px;
+}
+
+.dsignfly-post-comment-form-label {
+    font-size: 14px;
+}
+
+#dsignfly-post-comment-form-label {
+    font-size: 18px;
+}
+
+#dsignfly-post-comment-form-input {
+    width: 100%;
+    resize: none;
+}
+
+#dsignfly-post-comment-form-label, .dsignfly-post-comment-form-label {
+    margin-bottom: 5px;
+}
+
+#dsignfly-post-comment-form-input , .dsignfly-post-comment-form-input {
+    border: 1px solid #62585f;
+}
+
+.dsignfly-post-comment-submit-btn {
+    grid-area: submit;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: auto;
+    float: right;
+}
+
+.dsignfly-comment-icon {
+    height: 13px;
+    width: 13px;
+    transform: scaleX(-1);
+}
+
+.comment-reply-link {
+    text-decoration: none;
+    color: #62585f;
+}
+
+.dsignfly-comment-content-body {
+    margin-left: 13px; 
+}
+
+#line4 {
+    margin-bottom: 15px;
+}
+
+#dsignfly-single-post-all-comments {
+    margin-bottom: 25px;
+}
+
+.dsignfly-comment-post-form-container {
+    margin-top: 30px;
+}
+/* post comments css : end */

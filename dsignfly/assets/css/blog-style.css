@@ -1,0 +1,105 @@
+/* 
+    css for page : blog 
+*/
+
+/* post listing css : start */
+#dsignfly-blog-page-content-container {
+    display: flex;
+}
+
+#dsignfly-blog-content {
+    margin-right: 20px;
+    width: 70%;
+}
+
+.dsignfly-post-header {
+    display: flex;
+    height: 50px;
+    background-color: #222;
+    border-radius: 3px;
+    color: #fff;
+    align-items: center;
+}
+
+.dsignfly-post-header-date {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    width: 10%;
+    text-align: center;
+    line-height: 1;
+    align-items: center;
+}
+
+.dsignfly-post-header:hover {
+    background-color: #ef4634;
+}
+
+.dsignfly-post-header-date-mm {
+    font-size: 14px;
+}
+
+.dsignfly-post-header-date-dd {
+    font-size: 25px;
+}
+    
+.dsignfly-post-header-title {
+    font-size: 20px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+.dsignlfy-posts-content {
+    margin-bottom: 55px;
+}
+
+.dsignfly-post-body {
+    margin: 20px 0;
+    display: flex;
+    /* grid-template-columns: auto auto; */
+    column-gap: 20px;
+    font-size: 14px;
+}
+
+.dsignfly-post-body-content {
+    height: 153px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.dsignfly-post-body-image {
+    height: 153px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.dsignfly-post-body-metadata {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#dsignfly-author-link {
+    font-size: 13px;
+}
+
+.dsignfly-post-body-author {
+    color: #62585f;
+    margin: 0 0;
+}
+
+.dsignfly-post-body-author-comments {
+    margin: 0 0;
+    text-align: right;
+}
+
+.dsignfly-post-body-paragraph {
+    color: #62585f;
+    line-height: 21px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+}
+/* post listing css : end */
+    
