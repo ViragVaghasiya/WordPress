@@ -1,0 +1,39 @@
+.book-info-setting-checkbox {
+    margin-top: 10px;
+}
+
+#wpbk-require-price-recalculate, 
+#price-recalculate-label, 
+#price-recalculate-description1, 
+#wpbk-recalc-button,
+#price-update-result,
+#price-update-loading,
+#price-recalculate-warning,
+#forex-rate-type
+ {
+    display: none;
+}
+
+#price-recalculate-warning {
+    color: crimson;
+}
+
+#wpbk-forex-table th{
+    padding-top: 5px;
+}
+
+#forex-rate-type{
+    margin-top: 8px;
+}
+
+.wpbk-api-rates{
+    font-weight: 700;
+    color: rgb(47, 112, 47);
+}
+
+#forex-rate-manual-update {
+    font-size: 17px;
+    
+    padding: 0;
+    margin: 0;
+}

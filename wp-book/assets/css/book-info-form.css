@@ -1,0 +1,28 @@
+.wpbk-box{
+    display: table;
+}
+
+.wpbk-field{
+    display: table-row;
+}
+
+.wpbk-book-info-form-label, .wpbk-book-info-form-input, .wpbk-book-info-form-validation {
+    display: table-cell;
+    margin: 10px 70px;
+}
+
+.wpbk-book-info-form-validation {
+    display: none;
+}
+
+#wpbk_price {
+    margin-top: 0;
+}
+
+#search-book, #search-button, #book-search-loading, #wpbk-thumbnail-url, #wpbk-thumbnail-label, #wpbk-suggest-category-label, #wpbk-suggest-category, #wpbk-line{
+    display: none;
+}
+
+#wpbk-thumbnail-url,  #wpbk-suggest-category{
+    padding-left: 25px;
+}
